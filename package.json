@@ -4,7 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "server":"nodemon main.js",
+    "build": "node --check main.js && node --check config/db.js",
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "server": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

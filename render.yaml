@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: backend
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
